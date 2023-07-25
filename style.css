@@ -2,6 +2,7 @@
   height: 100vh;
   max-width: 100vw;
   display: flex;
+  position: relative;
 }
 
 .slide {
@@ -11,12 +12,12 @@
 .mostrar {
   display: flex;
   position: relative;
-  opacity: 1;
+  transition: 1s ease-in-out;
 }
 
-.opacidade{
-    opacity: 0.3;
-    cursor: default;
+.opacidade {
+  opacity: 0.3;
+  cursor: default;
 }
 
 .seta-voltar {
@@ -26,9 +27,8 @@
   height: 78px;
   width: 56px;
   margin-left: 70px;
-  cursor:pointer;
+  cursor: pointer;
 }
-
 
 .seta-adiantar {
   position: absolute;
@@ -39,7 +39,7 @@
   width: 56px;
   margin-right: 70px;
   transform: rotate(180deg);
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .conteudo {
@@ -108,5 +108,5 @@
 }
 
 .conteudo a.btn.color-button-blue {
-  color: #10ACDD;
+  color: #10acdd;
 }
